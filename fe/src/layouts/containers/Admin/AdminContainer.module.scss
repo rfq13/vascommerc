@@ -1,0 +1,54 @@
+#adminContainer {
+  :global {
+    .ant-menu-dark.ant-menu-dark:not(.ant-menu-horizontal) {
+      width: 90%;
+      margin: auto;
+    }
+    
+    .ant-menu-dark.ant-menu-dark:not(.ant-menu-horizontal)
+    .ant-menu-item-active {
+      background-color: var(--primary-light);
+      border-radius: 8px;
+    }
+    .ant-menu-dark.ant-menu-dark:not(.ant-menu-horizontal)
+    .ant-menu-item-active .ant-menu-item-icon {
+      stroke: var(--primary-light) !important;
+      fill: var(--primary-color) !important;
+      stroke-width: 2px;
+    }
+
+    .ant-menu-dark.ant-menu-dark:not(.ant-menu-horizontal)
+    .ant-menu-item-selected {
+      background-color: var(--primary-color);
+      border-radius: 8px;
+    }
+    .ant-menu-dark.ant-menu-dark:not(.ant-menu-horizontal)
+    .ant-menu-item-selected .ant-menu-item-icon {
+      stroke: white !important;
+      fill: var(--primary-color) !important;
+      stroke-width: 2px;
+    }
+
+
+    .ant-menu-dark.ant-menu-dark:not(.ant-menu-horizontal)
+    .ant-menu-item .ant-menu-item-icon {
+      stroke: #1A1111;
+      fill: rgb(107, 99, 99);
+      stroke-width: 2px;
+    }
+
+
+    inline.ant-menu-sub {
+      background: transparent;
+    }
+
+    .ant-menu-dark .ant-menu-inline.ant-menu-sub {
+      background: transparent;
+    }
+
+    ul.ant-menu-inline-collapsed .ant-menu-item-icon {
+      display: inline-flex;
+      vertical-align: middle;
+    }
+  }
+}

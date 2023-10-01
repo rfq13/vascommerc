@@ -1,0 +1,20 @@
+@import 'src/styles/_mixins';
+
+.section {
+  margin: auto;
+  margin-left: 20px;
+  margin-right: 20px;
+  transition: all 0.2s;
+
+  // padding: 0 16px;
+  @include md {
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    padding: 0 0px;
+  }
+  @include lg {
+    margin-left: 7%;
+    margin-right: 7%;
+    padding: 0 20px;
+  }
+}

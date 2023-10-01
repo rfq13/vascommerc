@@ -1,0 +1,15 @@
+.uboxModal {
+  :global {
+    .ant-modal-content {
+      border-radius: 20px;
+    }
+
+    .ant-modal-close {
+      display: none;
+    }
+
+    .ant-modal-body {
+      padding: 32px 40px;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.searchfield {
+  width: 20rem;
+  height: 2.5rem;
+  border-radius: 8px;
+  background-color: #f0f3f4;
+  border: none;
+}
+
+.searchfield input {
+  background-color: #f0f3f4;
+}
+
+.baseinp {
+  border-radius: 8px;
+}
+
+.ac {
+  margin: 0;
+  background: transparent;
+  height: 2.5rem;
+}

@@ -1,0 +1,116 @@
+@import 'src/styles/_mixins';
+
+.skeleton {
+  display: flex !important;
+  height: 325px !important;
+  width: 100%;
+  max-width: 1440px !important;
+  margin: 0 auto;
+  @include md {
+    height: 639px !important;
+  }
+}
+
+.navigation-wrapper {
+  position: relative;
+  max-width: 1440px;
+  margin: 0 auto 60px auto;
+  background-color: #fff;
+  @include md {
+    margin: 0 auto 140px auto;
+  }
+}
+
+.slide {
+  background-color: #fff;
+  height: 100%;
+  max-height: 639px;
+  text-align: center;
+  aspect-ratio: 2.25/1;
+}
+
+.arrow {
+  display: none;
+  width: 32px;
+  height: 32px;
+  border: none;
+  border-radius: 50%;
+  fill: var(--primary-color);
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+  &:global(:disabled) {
+    cursor: not-allowed;
+    fill: var(--primary-light);
+  }
+  @include md {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.arrow-left {
+  left: 60px;
+}
+
+.arrow-right {
+  left: auto;
+  right: 60px;
+}
+
+.dots {
+  position: absolute;
+  bottom: 8px;
+  display: flex;
+  justify-content: center;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  @include md {
+    bottom: 44px;
+  }
+}
+
+.dot {
+  position: relative;
+  width: 8px;
+  height: 8px;
+  border: 1px solid var(--primary-color);
+  background: #fff;
+  border-radius: 50%;
+  margin: 0 5px;
+  padding: 2px;
+  cursor: pointer;
+  @include md {
+    margin: 0 8px;
+    padding: 5px;
+    width: 12px;
+    height: 12px;
+  }
+  &:global(.active) {
+    &::after {
+      position: absolute;
+      content: '';
+      display: block;
+      width: 4px;
+      height: 4px;
+      background: var(--primary-color);
+      border-radius: 50%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      @include md {
+        width: 6px;
+        height: 6px;
+      }
+    }
+  }
+}
+
+.dot:focus {
+  outline: none;
+}

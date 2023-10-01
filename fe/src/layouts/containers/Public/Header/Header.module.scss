@@ -1,0 +1,83 @@
+@import 'src/styles/_mixins';
+
+.Container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  transform: translateZ(0);
+  z-index: 100;
+  // background: #fff;
+  background-color: transparent;
+  box-shadow: none;
+  transition: box-shadow 150ms ease-in;
+  &.shadow {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+  }
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.HeaderContainer {
+  margin-right: auto;
+  margin-left: auto;
+  width: inherit;
+  max-width: 1240px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 65px;
+  padding: 0 20px;
+  @include md {
+    height: 75px;
+  }
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  border: 1px solid var(--primary-color);
+  
+}
+
+.HeaderLogo {
+  img {
+    width: 111px;
+    @include md {
+      width: 120px;
+    }
+  }
+
+  @include md {
+    padding-right: 2.5rem;
+  }
+}
+.HeaderPopoverCategory {
+  padding-right: 2.5rem;
+}
+.HeaderSearchBar {
+  width: 556px;
+}
+
+.HeaderMenuCourse {
+  color: #000000;
+  padding: 0 1.68rem;
+  font-size: 16px;
+  white-space: nowrap;
+  font-weight: 500;
+  &.active {
+    color: var(--primary-color);
+    position: relative;
+    &::after {
+      content: '';
+      display: block;
+      width: calc(100% - 3.375rem);
+      height: 4px;
+      background-color: var(--primary-color);
+      border-radius: 100px;
+      position: absolute;
+      bottom: -14px;
+    }
+  }
+}
+
+.HeaderDivider {
+  margin-right: 2.5rem !important;
+  height: 41px !important;
+}

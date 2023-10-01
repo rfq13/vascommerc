@@ -1,0 +1,19 @@
+@import 'src/styles/_mixins';
+
+.FooterContainer {
+  margin-right: auto;
+  margin-left: auto;
+  width: inherit;
+  max-width: 1240px;
+  display: flex;
+  align-items: center;
+  padding: 32px 20px;
+  justify-content: space-between;
+  flex-direction: column-reverse;
+  gap: 0px;
+  @include md {
+    gap: 20px;
+    padding: 72px 20px;
+    flex-direction: row;
+  }
+}

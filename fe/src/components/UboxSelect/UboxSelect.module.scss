@@ -1,0 +1,86 @@
+.uboxSelect {
+  height: auto !important;
+
+  :global {
+    .ant-select-selector {
+      padding: 10px 16px !important;
+      height: auto !important;
+      border-radius: 8px !important;
+    }
+    // jika parent ant-select-selector ada kelas berem, maka border radiusnya 50px
+    .ant-select-selector.berem {
+      border-radius: 50px !important;
+    }
+    .ant-select-selection-search {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      left: 16px !important;
+    }
+    .ant-select-selection-overflow-item .ant-select-selection-search {
+      left: 0 !important;
+    }
+    .ant-select-selection-search-input {
+      height: auto !important;
+    }
+    .ant-select-selection-placeholder,
+    .ant-select-selection-item {
+      display: flex;
+      align-items: center;
+      line-height: 1 !important;
+    }
+    .ant-select-selection-placeholder {
+      left: 22px !important;
+    }
+    .ant-select-arrow,
+    .ant-select-clear {
+      right: 16px !important;
+    }
+    .ant-select-clear {
+      top: calc(50% - 2px);
+    }
+  }
+}
+.uboxSelectHeaderSearchForDesktop {
+  height: auto !important;
+
+  :global {
+    .ant-select-selector {
+      padding: 5px 16px !important;
+      height: auto !important;
+      border-radius: 50px !important;
+    }
+    // jika parent ant-select-selector ada kelas berem, maka border radiusnya 50px
+    .ant-select-selector.berem {
+      border-radius: 50px !important;
+    }
+    .ant-select-selection-search {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      left: 16px !important;
+    }
+    .ant-select-selection-overflow-item .ant-select-selection-search {
+      left: 0 !important;
+    }
+    .ant-select-selection-search-input {
+      height: auto !important;
+    }
+    .ant-select-selection-placeholder,
+    .ant-select-selection-item {
+      display: flex;
+      align-items: center;
+      line-height: 1 !important;
+    }
+    .ant-select-selection-placeholder {
+      left: 22px !important;
+    }
+    .ant-select-arrow,
+    .ant-select-clear {
+      right: 16px !important;
+    }
+    .ant-select-clear {
+      top: calc(50% - 2px);
+    }
+  }
+}
